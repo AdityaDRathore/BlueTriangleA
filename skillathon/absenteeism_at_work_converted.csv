@@ -1,4 +1,4 @@
-,ID,Reason for absence,Day of the week,Month of absence,Seasons,Transportation expense,Distance from Residence to Work,Service time,Age,Work load Average/day,Hit target,Disciplinary failure,Education,Son,Social drinker,Social smoker,Pet,Weight,Height,Body mass index,Absenteeism time in hours
+,ID,Reason for absence,Month of absence,Day of the week,Seasons,Transportation expense,Distance from Residence to Work,Service time,Age,Work load Average/day,Hit target,Disciplinary failure,Education,Son,Social drinker,Social smoker,Pet,Weight,Height,Body mass index,Absenteeism time in hours
 0,11.0,26.0,7.0,3.0,1.0,289.0,36.0,13.0,33,239554,97.0,0.0,1.0,2.0,1.0,0.0,1.0,90.0,172.0,30.0,4.0
 1,36.0,0.0,7.0,3.0,1.0,118.0,13.0,18.0,50,239554,97.0,1.0,1.0,1.0,1.0,0.0,0.0,98.0,178.0,31.0,0.0
 2,3.0,23.0,7.0,4.0,1.0,179.0,51.0,18.0,38,239554,97.0,0.0,1.0,0.0,1.0,0.0,0.0,89.0,170.0,31.0,2.0
