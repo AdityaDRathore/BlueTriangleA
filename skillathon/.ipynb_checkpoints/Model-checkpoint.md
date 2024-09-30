@@ -1,7 +1,7 @@
-# Justification for Insufficient R² Score in Model Evaluation
+# Justification for Irrelevant Model prediction
 
 ## Overview
-Despite utilizing advanced techniques such as RandomizedSearchCV and GridSearchCV on the complete dataset, along with Principal Component Analysis (PCA) for feature reduction and feature selection via L1 regularization, the resulting R² scores do not meet the required threshold for model performance. This document aims to provide a detailed justification for these findings.
+Despite utilizing advanced techniques such as RandomizedSearchCV and GridSearchCV on the complete dataset, along with Principal Component Analysis (PCA) for feature reduction and feature selection via L1 regularization, the resulting evaluation scores do not meet the required threshold for model performance. This document aims to provide a detailed justification for these findings.
 
 ## Key Techniques Utilized
 
@@ -20,20 +20,16 @@ Despite utilizing advanced techniques such as RandomizedSearchCV and GridSearchC
 
 ## Observations
 
-### 1. Model Complexity and Underfitting
-- The models trained may be too simplistic relative to the complexity of the underlying data structure. 
-- Linear models, while interpretable, may not capture non-linear relationships inherent in the data.
+### 1. Model Complexity and undefitting
+- The models trained may be not relative to the simplicity of the underlying data structure. 
+- Linear models, while interpretable, may not capture complex relationships inherent in the data.
 
 ### 2. Data Quality and Feature Engineering
 - The quality and richness of the dataset play crucial roles in model performance. Issues such as:
   - Missing values
   - Outliers
   - Noise in the data
-- If the dataset does not adequately represent the underlying patterns, even well-tuned models may fail to achieve high R² scores.
-
-### 3. R² Score Limitations
-- R² is not always the best metric for assessing model performance, particularly for non-linear problems or datasets with significant noise. 
-- A low R² does not necessarily indicate a useless model; it may still provide valuable insights if evaluated with other metrics (e.g., RMSE, MAE).
+- If the dataset does not adequately represent the underlying patterns, even well-tuned models may fail to achieve realistic evaluation metrics.
 
 ### 4. Potential Overfitting with Feature Selection
 - L1 regularization can lead to overfitting, especially when the dataset is small relative to the number of features.
@@ -41,4 +37,4 @@ Despite utilizing advanced techniques such as RandomizedSearchCV and GridSearchC
 
 ## Conclusion
 
-Despite leveraging sophisticated techniques such as RandomizedSearchCV, GridSearchCV, PCA, and L1 regularization, the models developed have not met the desired R² score benchmarks. This may be attributed to a combination of model complexity issues, data quality, limitations of the R² metric, and potential overfitting. 
+Despite leveraging sophisticated techniques such as RandomizedSearchCV, GridSearchCV, PCA, and L1 regularization, the models developed have not met the desired R² score benchmarks. This may be attributed to a combination of model complexity issues, data quality, **Co-relation between Features and target** and potential *overfitting/underfitting*. 
